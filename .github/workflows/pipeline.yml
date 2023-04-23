@@ -1,0 +1,8 @@
+on:
+  push:
+    branches: main
+jobs:
+  pipeline:
+    permissions:
+      contents: write
+    uses: davidmak/green-tiger/.github/workflows/pipeline.yml@main

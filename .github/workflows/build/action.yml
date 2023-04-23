@@ -1,0 +1,9 @@
+runs:
+  using: "composite"
+  steps:
+    - run: env
+      shell: bash
+    - run: ls -al
+      shell: bash
+    - run: mkdir dist && date > dist/date.txt && ls -al > dist/ls.txt
+      shell: bash
